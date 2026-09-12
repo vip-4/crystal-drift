@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>Crystal Drift — Play the Free 3D Browser Crystal Runner Game</title>
+  <meta name="description" content="Play Crystal Drift right now: a free, lightweight 3D browser game. Collect energy crystals (+10 points), dodge meteor fields, 3 lives. WASD / arrow keys on desktop, drag to fly on mobile." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.local/crystal-drift/game.html" />
+  <meta property="og:title" content="Crystal Drift — Play Now (Free 3D Browser Game)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Collect crystals, dodge meteors, survive the drift. Plays instantly in your browser — no download." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+<section class="game-shell" aria-label="Crystal Drift game">
+
+  <canvas id="game-canvas" aria-label="Crystal Drift game canvas"></canvas>
+
+  <!-- HUD -->
+  <div class="hud">
+    <div class="score">
+      <b id="score">0</b>
+      <span>score</span>
+    </div>
+    <div class="lives" id="lives" aria-label="Lives remaining">
+      <i></i><i></i><i></i>
+    </div>
+    <a class="back" href="index.html">← Home</a>
+  </div>
+
+  <!-- Start overlay -->
+  <div id="start-overlay" class="overlay" hidden>
+    <div class="panel">
+      <h1>Crystal Drift</h1>
+      <p>Steer with <span class="kbd">W A S D</span> or <span class="kbd">↑ ↓ ← →</span> (mobile: drag to fly). Collect crystals <strong>+10</strong> · dodge meteors · <strong>3 lives</strong>.</p>
+      <button id="btn-start" class="btn">Launch</button>
+    </div>
+  </div>
+
+  <!-- Game over overlay -->
+  <div id="gameover-overlay" class="overlay" hidden>
+    <div class="panel">
+      <h2>Drift lost</h2>
+      <p>Final score: <strong id="final-score">0</strong> · Best: <strong id="best-score">0</strong></p>
+      <button id="btn-restart" class="btn">Fly again</button>
+    </div>
+  </div>
+
+  <div class="controls-hint" id="status">loading 3D assets…</div>
+</section>
+
+<script type="module" src="js/game.js"></script>
+</body>
+</html>

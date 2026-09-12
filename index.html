@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ======================= SEO ======================= -->
+  <title>Crystal Drift — Free 3D Browser Crystal Runner Game | No Download</title>
+  <meta name="description" content="Crystal Drift is a free, lightweight 3D browser game where you pilot a low-poly spaceship through deep space, collecting energy crystals and dodging meteor fields. No download, no install — plays instantly in your browser." />
+  <meta name="keywords" content="3d browser game, crystal runner, space game, low poly game, free online game, three.js game, no download game" />
+  <meta name="author" content="Crystal Drift Team" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://example.local/crystal-drift/" />
+  <meta name="theme-color" content="#0c1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Crystal Drift" />
+  <meta property="og:title" content="Crystal Drift — Free 3D Browser Crystal Runner Game" />
+  <meta property="og:description" content="Pilot a low-poly spaceship through deep space, collect crystals, dodge meteors. Free, instant, no download — plays in any modern browser." />
+  <meta property="og:url" content="https://example.local/crystal-drift/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crystal Drift — Free 3D Browser Crystal Runner Game" />
+  <meta name="twitter:description" content="Collect crystals. Dodge meteors. Play instantly in your browser — no download." />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- ============ GEO (Generative Engine Optimization) — structured facts ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "name": "Crystal Drift",
+        "description": "Crystal Drift is a free, lightweight 3D browser game: pilot a low-poly spaceship, collect energy crystals (+10 points each) and avoid meteor fields (3 lives). Playable instantly in any modern browser with keyboard (WASD / arrow keys) or touch. No download, no install, no sign-up.",
+        "genre": ["Space", "Arcade", "Endless Runner", "3D"],
+        "gamePlatform": "Web Browser",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "url": "https://example.local/crystal-drift/game.html",
+        "playMode": "SinglePlayer",
+        "author": { "@type": "Organization", "name": "Crystal Drift Team" },
+        "datePublished": "2026-09-12"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Crystal Drift",
+        "url": "https://example.local/crystal-drift/",
+        "publisher": { "@type": "Organization", "name": "Crystal Drift Team" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Crystal Drift free to play?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Crystal Drift is completely free. It runs in your browser and requires no download, no install and no account." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the controls in Crystal Drift?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Use the W and S keys (or up/down arrows) to climb and dive, and A and D keys (or left/right arrows) to steer. On touch devices, drag anywhere on the screen to move the ship." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does scoring work in Crystal Drift?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Each energy crystal you collect adds 10 points. Colliding with a meteor costs one life; you start with 3 lives. The game speeds up as your score grows." }
+          },
+          {
+            "@type": "Question",
+            "name": "What technology does Crystal Drift use?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Crystal Drift is a static site built with Three.js (WebGL) and glTF/GLB 3D assets created in Blender. The whole game downloads in under 100 KB, so it starts almost instantly." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I play Crystal Drift on mobile?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Crystal Drift works on phones and tablets via touch drag controls, and on desktop via keyboard." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">Crystal<span class="tag">Drift</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-to-play">How to play</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn" href="game.html">Play now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ================= HERO ================= -->
+  <section class="hero container" aria-labelledby="hero-title">
+    <div>
+      <span class="eyebrow">Free 3D browser game · no install</span>
+      <h1 id="hero-title">Pilot the drift.<br /><span class="hl">Grab the crystals.</span><br />Outrun the rocks.</h1>
+      <p class="lede">
+        Crystal Drift is a lightweight 3D endless runner built with Three.js and
+        low-poly assets modeled in Blender. Steer your ship through deep space,
+        harvest energy crystals for +10 points each, and thread the meteor field
+        for as long as you can. It loads in under 100&nbsp;KB and plays instantly.
+      </p>
+
+      <div class="hero-meta" aria-label="Game facts">
+        <div class="stat"><b><span data-count="3" data-suffix="">3</span></b><span>3D levels</span></div>
+        <div class="stat"><b><span data-count="10" data-suffix=" pts">10</span></b><span>per crystal</span></div>
+        <div class="stat"><b><span data-count="100" data-suffix=" KB">100</span></b><span>total weight</span></div>
+        <div class="stat"><b><span data-count="2" data-suffix="">2</span></b><span>control schemes</span></div>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn btn-ghost" href="#features">About the game</a>
+        <a class="btn" href="game.html">Play Crystal Drift →</a>
+      </div>
+    </div>
+
+    <!-- decorative hero visual (CSS starfield, no heavy asset) -->
+    <figure class="hero-visual" role="img" aria-label="Preview of Crystal Drift: a teal spaceship chasing glowing purple crystals past drifting meteors and an orange planet.">
+      <div class="hero-art" aria-hidden="true">
+        <span class="s1"></span><span class="s2"></span><span class="s3"></span>
+        <span class="s4"></span><span class="s5"></span><span class="s6"></span>
+        <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet" class="hero-svg">
+          <path d="M40 75 L64 62 L64 88 Z M64 62 L86 50 L86 100 L64 88 Z M86 50 L150 75 L86 100 Z M150 75 L196 58 L196 92 Z M196 58 L236 46 L236 76 L212 66 Z M236 46 L236 76 L272 75 Z M236 76 L272 75 L236 92 Z M196 92 L236 104 L236 76 Z" fill="#2dd4bf" />
+          <polygon points="300,40 318,30 314,52 340,58 314,66 318,88 300,78 282,88 286,66 260,58 286,52 282,30" fill="#a78bfa" opacity="0.9" />
+          <polygon points="352,96 364,90 362,104 378,108 362,112 364,126 352,120 340,126 342,112 326,108 342,104 340,90" fill="#7dd3fc" opacity="0.9" />
+          <circle cx="120" cy="28" r="2" fill="#ffe7b3" />
+          <circle cx="230" cy="120" r="1.6" fill="#ffe7b3" />
+          <circle cx="360" cy="32" r="2.2" fill="#bfdcff" />
+        </svg>
+      </div>
+      <figcaption class="caption">
+        <span>Ship (Blender GLB) · Crystal · Meteor · Planet — all generated with Blender MCP</span>
+        <a href="game.html">Open live game ↗</a>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ GEO fact panel (answer-first, machine + AI friendly) ============ -->
+  <section class="container" aria-label="Crystal Drift at a glance">
+    <dl class="fact-panel">
+      <div><dt>Game type</dt><dd>3D endless runner (space)</dd></div>
+      <div><dt>Price</dt><dd>Free · no ads</dd></div>
+      <div><dt>Platform</dt><dd>Any modern browser (WebGL)</dd></div>
+      <div><dt>Engine</dt><dd>Three.js + glTF assets</dd></div>
+      <div><dt>3D assets</dt><dd>Modeled in Blender 5.2 via MCP</dd></div>
+      <div><dt>Load time</dt><dd>≈ instant (under 100 KB)</dd></div>
+      <div><dt>Requires</dt><dd>No download / install / account</dd></div>
+      <div><dt>Last updated</dt><dd>2026-09-12</dd></div>
+    </dl>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="block container" id="features" aria-labelledby="features-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Why it stands out</span>
+        <h2 id="features-title">Small file. Big drift.</h2>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <span class="idx">01</span>
+        <h3>Blender-crafted 3D</h3>
+        <p>Every model — the teal scout ship, faceted energy crystals, cratered meteors and the amber planet — was built programmatically in Blender 5.2 through the Blender MCP addon and exported as lightweight glTF.</p>
+      </div>
+      <div class="feature">
+        <span class="idx">02</span>
+        <h3>Genuinely lightweight</h3>
+        <p>The full game ships as a static HTML/JS bundle with a shared 87&nbsp;KB of GLB assets — no framework, no runtime, no tracking. It starts in under a second even on slow connections and works offline after first load.</p>
+      </div>
+      <div class="feature">
+        <span class="idx">03</span>
+        <h3>Two control schemes</h3>
+        <p>Desktop players use WASD or arrow keys with smooth banking physics. Mobile players get drag-to-fly touch controls. The difficulty scales gently as your score climbs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO PLAY ============ -->
+  <section class="block container" id="how-to-play" aria-labelledby="how-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Getting started</span>
+        <h2 id="how-title">How to play</h2>
+      </div>
+    </div>
+    <ol class="steps">
+      <li>
+        <div>
+          <h3>Open the game</h3>
+          <p>Hit the “Play Crystal Drift” button anywhere on this page. The game loads instantly — no wait screen, no installer.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Steer the ship</h3>
+          <p>On desktop use <strong>W / S</strong> to climb and dive and <strong>A / D</strong> to steer; arrow keys work too. On mobile, drag your finger anywhere on the screen.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Collect crystals, dodge meteors</h3>
+          <p>Fly through the glowing crystal clusters for <strong>+10 points</strong> each. Touching a meteor costs one of your <strong>3 lives</strong>. The field picks up speed the longer you survive.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Beat your best score</h3>
+          <p>Your high score is saved locally in the browser. Compete against yourself — how long can you keep the drift going?</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block container" id="faq" aria-labelledby="faq-title">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Quick answers</span>
+        <h2 id="faq-title">Frequently asked questions</h2>
+      </div>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Is Crystal Drift free to play?</summary>
+        <div class="a"><p>Yes. Crystal Drift is completely free. It runs in your browser and requires no download, no install and no account.</p></div>
+      </details>
+      <details>
+        <summary>What are the controls in Crystal Drift?</summary>
+        <div class="a"><p>Use the W and S keys (or up/down arrows) to climb and dive, and A and D keys (or left/right arrows) to steer. On touch devices, drag anywhere on the screen to move the ship.</p></div>
+      </details>
+      <details>
+        <summary>How does scoring work?</summary>
+        <div class="a"><p>Each energy crystal you collect adds 10 points. Colliding with a meteor costs one life; you start with 3 lives. The game speeds up as your score grows.</p></div>
+      </details>
+      <details>
+        <summary>What technology does Crystal Drift use?</summary>
+        <div class="a"><p>Crystal Drift is a static site built with Three.js (WebGL) and glTF/GLB 3D assets created in Blender. The whole game downloads in under 100&nbsp;KB, so it starts almost instantly.</p></div>
+      </details>
+      <details>
+        <summary>Can I play Crystal Drift on mobile?</summary>
+        <div class="a"><p>Yes. Crystal Drift works on phones and tablets via touch drag controls, and on desktop via keyboard.</p></div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div>
+      <p><strong>Crystal Drift</strong> — a lightweight 3D browser game.</p>
+      <p>Free · No download · No tracking · Works offline after first load.</p>
+    </div>
+    <div>
+      <p><a href="game.html">Play the game</a></p>
+      <p><a href="sitemap.xml">Sitemap</a> · <a href="robots.txt">Robots</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
